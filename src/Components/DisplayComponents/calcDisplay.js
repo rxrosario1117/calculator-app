@@ -1,10 +1,10 @@
 import React from "react";
-// import "../../App.css"
 import "./calcDisplay.css"
+
 const CalcDisplay = () => {
     return (
-    <div>
-        Hello
+    <div className="Page-background">
+        <h1 className="Text-center">Hello</h1>
     </div>
 
     );

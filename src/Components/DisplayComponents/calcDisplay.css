@@ -1,0 +1,13 @@
+.Page-background {
+  margin: auto;
+  text-align: center;
+  background-color: red;
+  color: blue;
+  height: 10vh;
+  width: 10vw;
+  }
+
+.Text-center {
+  border: 5px yellow solid;
+  padding: 25%;
+}
