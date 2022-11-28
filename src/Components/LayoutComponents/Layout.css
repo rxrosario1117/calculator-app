@@ -1,0 +1,66 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: aquamarine;
+}
+
+.calculator-grid {
+    display: grid;
+    margin-top: 0.1rem;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(4, 7rem);
+}
+
+button {
+    width: 6rem;
+    height: 7rem;
+    border: 1px solid;
+    outline: none;
+    font-size: 2rem;    
+}
+
+.bigger-button {
+    grid-column: span 2;
+}
+
+.display {
+    /* Spans the entire first column */
+    grid-column: 1 / -1;    
+    background-color: rgba(0, 0, 0, .75);
+    /* Puts divs side by side */
+    display: flex;
+    /* Puts divs on top of each other */
+    flex-direction: column;
+    /* Puts divs to the right inside the column */
+    align-items: flex-end;
+    /* Keeps space around the divs ("space-between" would put things against the edge) */
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    /* Wraps text to the next line instead of going off the page */
+    word-break: break-all;
+}
+
+.test-button {
+    display: grid;
+    margin-top: 0.1rem;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: minmax(7rem, auto)
+    
+}
+
+.display .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.display .current-operand {
+    color: rgba(255, 255, 255);
+    font-size: 2.5rem;
+}
+
+.calculator-grid > button {
+    font-size: 2rem;
+}

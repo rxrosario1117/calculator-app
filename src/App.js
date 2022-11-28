@@ -1,11 +1,10 @@
 import React from "react";
-import CalcDisplay from "./Components/DisplayComponents/calcDisplay";
-// import "./App.css";
+import Layout from "./Components/LayoutComponents/calcLayout";
 
 function App() {
   return (
     <div>
-      <CalcDisplay/>
+      <Layout/>
     </div>
   );
 }

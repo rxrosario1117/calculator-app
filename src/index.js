@@ -6,7 +6,7 @@ import "./App.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <div className='Center'>
+    <div>
         <App />
 
     </div>

@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./calcDisplay.css"
 
-const CalcDisplay = () => {
+const CalcDisplay = ({ numList }) => {
+
+    console.log(numList);
+
+    let temp = "";
+
+        for(let i = 0; i < numList.length; i++) {
+            temp += numList[i];            
+        }
+
+    // const [displayValue, setDisplayValue] = useState(temp);
+
+    const displayValue= useState(temp);
+
+    
+
+
     return (
-    <div className="Page-background">
-        <h1 className="Text-center">Hello</h1>
+    <div key={ Math.random }>
+        <h1>{ displayValue }</h1>
     </div>
 
     );
